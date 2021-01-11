@@ -55,7 +55,7 @@ output "default_security_group_id" {
   value = data.aws_security_group.default.id
 }
 
-## Route Table IDS
+## Route Table Ids needed for TGW module
 output "public_route_table_ids" {
   description = "List of IDs of public route tables"
   value       = module.vpc.public_route_table_ids
