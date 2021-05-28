@@ -10,11 +10,6 @@ output "s3_user_key" {
   value = aws_iam_access_key.access_key.id
 }
 
-output "s3_user_secret" {
-  value = aws_iam_access_key.access_key.secret
-  sensitive = true
-}
-
 output "s3_policy_name" {
   value = aws_iam_policy.policy.id
 }
